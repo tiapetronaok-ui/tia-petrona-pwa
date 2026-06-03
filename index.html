@@ -23,7 +23,7 @@ color:white;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8));
 display:flex;
 flex-direction:column;
@@ -79,9 +79,24 @@ color:#ccc;
 
 <section class="hero">
 
+<img src="images/mini-lomo.jpg" style="width:100%;max-width:450px;border-radius:20px;margin-bottom:20px;">
+
 <img src="icons/logo.png" class="logo">
 
 <h1>TÍA PETRONA</h1>
+
+<div id="estado-local"
+style="
+font-weight:bold;
+margin-top:10px;
+font-size:18px;
+">
+Cargando horario...
+</div>
+
+<p style="color:#ccc;margin-top:5px;">
+Desde 2007
+</p>
 
 <div class="promo">
 🔥 MINI LOMO $8499
@@ -91,6 +106,18 @@ color:#ccc;
 🍔 PEDIR AHORA
 </a>
 
+<div style="margin-top:30px;margin-bottom:20px;text-align:center;">
+<h2>⭐ PROMO DESTACADA</h2>
+</div>
+
+<img src="images/burger-petro.jpg"
+style="
+width:90%;
+max-width:450px;
+border-radius:20px;
+margin-bottom:20px;
+">
+  
 <a class="btn" href="https://wa.me/5493865632018">
 💬 WHATSAPP
 </a>
@@ -103,6 +130,22 @@ color:#ccc;
 ☎ LLAMAR
 </a>
 
+<div style="margin-top:20px;text-align:center;">
+
+<a class="btn" href="https://instagram.com/tiapetrona">
+📷 INSTAGRAM
+</a>
+
+<a class="btn" href="https://facebook.com/tiapetrona">
+📘 FACEBOOK
+</a>
+
+<a class="btn" href="https://tiktok.com/@tiapetrona">
+🎵 TIKTOK
+</a>
+
+</div>
+
 <div class="footer">
 French 579 · Aguilares · Tucumán
 </div>
@@ -110,9 +153,23 @@ French 579 · Aguilares · Tucumán
 </section>
 
 <script>
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/sw.js");
 }
+
+const hora = new Date().getHours();
+
+const estado = document.getElementById("estado-local");
+
+if (hora >= 20 || hora < 2) {
+  estado.innerHTML = "🟢 ABIERTO AHORA";
+  estado.style.color = "#43d854";
+} else {
+  estado.innerHTML = "🔴 CERRADO";
+  estado.style.color = "#ff4d4d";
+}
+
 </script>
 </body>
 </html>
