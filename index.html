@@ -23,7 +23,9 @@ color:white;
 }
 
 .hero{
-min-height:100vh;
+padding:20px;
+text-align:center;
+}
 background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8));
 display:flex;
 flex-direction:column;
@@ -33,8 +35,12 @@ padding:20px;
 text-align:center;
 }
 
-.logo{
-width:180px;
+h1{
+font-size:2.2rem;
+margin:0;
+}
+margin-bottom:10px;
+}
 margin-bottom:20px;
 }
 
@@ -79,7 +85,15 @@ color:#ccc;
 
 <section class="hero">
 
-<img src="images/mini-lomo.jpg" style="width:100%;max-width:450px;border-radius:20px;margin-bottom:20px;">
+<img src="images/mini-lomo.jpg"
+style="
+width:100%;
+max-width:450px;
+height:260px;
+object-fit:cover;
+border-radius:20px;
+margin-bottom:20px;
+">
 
 <img src="icons/logo.png" class="logo">
 
