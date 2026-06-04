@@ -2,7 +2,7 @@
   "name": "Tía Petrona",
   "short_name": "Tía Petrona",
   "description": "Sandwiches, hamburguesas y mucho más",
-  "start_url": "/splash.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#111111",
   "theme_color": "#980000",
