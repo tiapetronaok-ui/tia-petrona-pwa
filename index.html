@@ -165,6 +165,10 @@ WHATSAPP
 CÓMO LLEGAR
 </a>
 
+<button id="installBtn" class="btn btn-mapa" style="display:none;">
+📲 INSTALAR APP
+</button> 
+
 <div class="social">
 
 <a href="https://instagram.com/tiapetrona" target="_blank">
@@ -201,6 +205,44 @@ if (hora >= 20 || hora < 2) {
   estado.innerHTML = "🔴 CERRADO · Abrimos 20:00";
   estado.style.color = "#FFD0D0";
 }
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+
+  e.preventDefault();
+
+  deferredPrompt = e;
+
+  const installBtn = document.getElementById("installBtn");
+
+  installBtn.style.display = "block";
+
+});
+
+document.getElementById("installBtn").addEventListener("click", async () => {
+
+  const isiPhone =
+    /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isiPhone) {
+
+    alert(
+      "Para instalar la App:\n\n1. Tocá Compartir\n2. Agregar a pantalla de inicio"
+    );
+
+    return;
+  }
+
+  if (!deferredPrompt) return;
+
+  deferredPrompt.prompt();
+
+  await deferredPrompt.userChoice;
+
+  deferredPrompt = null;
+
+});
 
 </script>
 </body>
