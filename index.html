@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Tía Petrona">
-<meta name="description" content="Tía Petrona · Sandwiches, hamburguesas y más · Aguilares, Tucumán · Desde 2007.">
+<meta name="description" content="Tía Petrona · Sanguches, lomos y burgers · Aguilares, Tucumán · Desde 2007.">
 <meta name="robots" content="index,follow">
-<title>Tía Petrona · Sandwiches & Más</title>
+<title>Tía Petrona · Sanguches, Lomos y Burgers</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" href="/icons/icon-180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png">
@@ -51,29 +51,34 @@ body{overflow-x:hidden}
 @keyframes load{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 #app{min-height:100vh;display:flex;flex-direction:column;background:linear-gradient(180deg,#750808 0,#750808 116px,#eee9df 116px,#eee9df 100%)}
 .top{height:116px;padding:20px max(22px,calc((100vw - 1180px)/2));display:flex;align-items:center;gap:18px;color:#fff;position:relative;z-index:2}
-.brand{display:flex;align-items:center;gap:14px}.brand-logo{width:58px;height:58px;border-radius:50%;background:var(--cream);border:2px solid var(--gold);padding:3px;object-fit:contain}.brand-name{font-family:Georgia,serif;font-size:25px;font-weight:700;color:#f3c94c}.brand-meta{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.64);margin-top:3px}
+.brand{display:flex;align-items:center}.brand-lockup{display:flex;flex-direction:column;align-items:flex-start}.brand-horizontal{display:block;width:235px;height:auto;max-height:72px;object-fit:contain}.brand-meta{font-size:9px;letter-spacing:2.4px;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:5px}.brand-meta-main{color:#f3c94c;font-weight:700}
 .status{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,.82);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:9px 13px;border-radius:999px}.dot{width:7px;height:7px;border-radius:50%;background:#42df78;box-shadow:0 0 0 4px rgba(66,223,120,.12)}
 .content{width:min(1180px,calc(100% - 28px));margin:-18px auto 0;flex:1;display:flex;flex-direction:column;position:relative;z-index:3}
 .shop-card{background:#fff;border-radius:20px 20px 0 0;overflow:hidden;box-shadow:0 16px 45px rgba(28,16,8,.13);flex:1;display:flex;flex-direction:column;min-height:calc(100vh - 150px)}
 .shop-head{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.97)}
-.shop-head strong{font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.shop-head span{font-size:11px;color:var(--muted)}
+.shop-head strong{font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.shop-head span{font-size:11px;color:var(--muted)}.menu-direct{color:var(--red);font-weight:700;text-decoration:none;margin-left:4px}.menu-direct:hover{text-decoration:underline}
 iframe{border:0;width:100%;flex:1;min-height:650px;display:block;background:#fff}
 .legal{background:linear-gradient(135deg,#1d1b19,#11100f);color:#fff;padding:24px 24px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid rgba(212,166,42,.35)}
 .legal-main{display:flex;align-items:center;gap:15px}.legal-mark{width:38px;height:38px;border:1px solid rgba(212,166,42,.55);border-radius:50%;padding:3px;background:var(--cream);object-fit:contain}.legal-title{font-size:13px;font-weight:700;letter-spacing:.4px}.legal-copy{font-size:11px;color:rgba(255,255,255,.58);margin-top:4px}.legal-copy b{color:#e8c45b;font-weight:600}.links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}.links a{color:rgba(255,255,255,.72);text-decoration:none;font-size:11px}.links a:hover{color:#f0c54e}
 .footer-note{background:#11100f;color:rgba(255,255,255,.36);text-align:center;font-size:9px;letter-spacing:1.2px;text-transform:uppercase;padding:0 20px 18px}
-@media(max-width:700px){#app{background:var(--red)}.top{height:98px;padding:15px 16px}.brand-logo{width:49px;height:49px}.brand-name{font-size:21px}.brand-meta{font-size:9px;letter-spacing:2px}.status{padding:7px 10px;font-size:10px}.content{width:100%;margin:0}.shop-card{border-radius:0;min-height:calc(100vh - 98px)}.shop-head{height:48px;padding:0 14px}.shop-head strong{font-size:10px}.shop-head span{font-size:9px}iframe{min-height:700px}.legal{padding:19px 16px 16px;display:block}.legal-main{margin-bottom:14px}.links{justify-content:flex-start;gap:14px}.footer-note{padding-bottom:15px;font-size:8px}}
+@media(max-width:700px){#app{background:var(--red)}.top{height:98px;padding:15px 16px}.brand-horizontal{width:175px;max-height:52px}.brand-meta{font-size:7px;letter-spacing:1.35px}.status{padding:7px 10px;font-size:10px}.content{width:100%;margin:0}.shop-card{border-radius:0;min-height:calc(100vh - 98px)}.shop-head{height:48px;padding:0 14px}.shop-head strong{font-size:10px}.shop-head span{font-size:9px}iframe{min-height:700px}.legal{padding:19px 16px 16px;display:block}.legal-main{margin-bottom:14px}.links{justify-content:flex-start;gap:14px}.footer-note{padding-bottom:15px;font-size:8px}}
 </style>
 </head>
 <body>
 <div class="splash" id="splash"><div class="splash-inner"><img class="splash-logo" src="/icons/logo.png" alt="Tía Petrona"><div class="splash-title">Tía Petrona</div><div class="splash-sub">Desde 2007 · Aguilares</div><div class="progress"><i></i></div></div></div>
 <div id="app">
   <header class="top">
-    <div class="brand"><img class="brand-logo" src="/icons/logo.png" alt="Logo Tía Petrona"><div><div class="brand-name">Tía Petrona</div><div class="brand-meta">Sandwiches · Hamburguesas · Amigos</div></div></div>
+    <div class="brand">
+      <div class="brand-lockup">
+        <img class="brand-horizontal" src="/icons/logo-horizontal.png" alt="Tía Petrona">
+        <div class="brand-meta brand-meta-main">Buenos Sanguches · Buenos Amigos · Buenos Momentos</div>
+      </div>
+    </div>
     <div class="status"><i class="dot" id="dot"></i><span id="estado">Abierto ahora</span></div>
   </header>
   <main class="content">
     <section class="shop-card">
-      <div class="shop-head"><strong>Menú online</strong><span>French 579 · Aguilares · Tucumán</span></div>
+      <div class="shop-head"><strong>Menú online</strong><span>French 579 · Aguilares · Tucumán · <a class="menu-direct" href="https://menu.fu.do/tiapetrona" target="_blank" rel="noopener">Abrir menú</a></span></div>
       <iframe id="tienda" src="https://menu.fu.do/tiapetrona" title="Menú online de Tía Petrona" loading="eager" allow="payment; camera"></iframe>
       <section class="legal">
         <div class="legal-main"><img class="legal-mark" src="/icons/logo.png" alt="Tía Petrona"><div><div class="legal-title">Tía Petrona</div><div class="legal-copy">Titular legal: <b>GRANEROS FERNANDO MIGUEL</b> · CUIT 20-29731663-0 · French 579 · Aguilares, Tucumán</div></div></div>
