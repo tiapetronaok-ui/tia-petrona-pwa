@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ar.com.tiapetrona.app.twa",
+      "sha256_cert_fingerprints": [
+        "47:60:CC:2A:4B:A7:72:8D:1E:39:18:DB:83:AA:E6:23:FF:90:DA:37:9C:EE:52:F7:34:E9:DB:DC:42:C6:6B:F6"
+      ]
+    }
+  }
+]
